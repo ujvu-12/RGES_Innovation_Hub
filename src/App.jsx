@@ -18,7 +18,7 @@ import ChatbotButton from "./components/ChatbotButton.jsx";
 import logo from "./assets/rges-logo.jpg";
 import partner1 from "./assets/partner1.jpg";
 import partner2 from "./assets/partner2.jpg";
-import intellirmLogo from "./assets/intellirmlogo.jpg";  
+import intellirmLogo from "./assets/intellirmLogo.jpg";  
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
