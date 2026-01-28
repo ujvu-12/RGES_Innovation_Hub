@@ -1,0 +1,54 @@
+import "./App.css";
+import { useState } from "react";
+
+import Header from "./components/Header.jsx";
+import HeroSection from "./components/HeroSection.jsx";
+import AboutSection from "./components/AboutSection.jsx";
+import WhoWeSupportSection from "./components/WhoWeSupportSection.jsx";
+import JourneySection from "./components/JourneySection.jsx";
+import WhatWeOfferSection from "./components/WhatWeOfferSection.jsx";
+import ProgramsSection from "./components/ProgramsSection.jsx";
+import PartnersSection from "./components/PartnersSection.jsx";
+import CTASection from "./components/CTASection.jsx";
+import Footer from "./components/Footer.jsx";
+import { ApplicationModal } from "./components/ApplicationModal.jsx";
+import ChatbotButton from "./components/ChatbotButton.jsx";
+
+// Import images
+import logo from "./assets/rges-logo.jpg";
+import partner1 from "./assets/partner1.jpg";
+import partner2 from "./assets/partner2.jpg";
+import intellirmLogo from "./assets/intellirmlogo.jpg";  
+
+function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <>
+      {/* Header */}
+      <Header onApplyClick={() => setIsModalOpen(true)} logo={logo} />
+
+      {/* Sections (UNCHANGED) */}
+      <HeroSection />
+      <AboutSection />
+      <WhoWeSupportSection />
+      <JourneySection />
+      <WhatWeOfferSection />
+      <ProgramsSection />
+      <PartnersSection partner1={partner1} partner2={partner2} intellirmLogo={intellirmLogo} />
+      <CTASection />
+      <Footer logo={logo} />
+
+      {/* Google Form Modal */}
+      <ApplicationModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+
+      {/* Chatbot Button */}
+      <ChatbotButton />
+    </>
+  );
+}
+
+export default App;
