@@ -3,7 +3,7 @@ import {
   Mail,
   Phone,
   MapPin,
-  
+ 
 } from "lucide-react";
 
 const Footer = ({ logo }) => {
@@ -49,25 +49,7 @@ const Footer = ({ logo }) => {
               fundable startups through mentorship, validation, and community.
             </p>
 
-            {/* Social Icons */}
-            <div className="flex items-center gap-2">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-9 h-9 rounded-md bg-slate-900 border border-slate-800
-                               flex items-center justify-center
-                               hover:bg-slate-800 transition"
-                  >
-                    <Icon className="w-4 h-4 text-slate-400 hover:text-white" />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
+           
 
           {/* Quick Links */}
           <div>
@@ -106,18 +88,18 @@ const Footer = ({ logo }) => {
 
               <li>
                 <a
-                  href="tel:+918309743210"
+                  href="tel:+918309721921"
                   className="flex items-start gap-2 text-slate-400 hover:text-white transition"
                 >
                   <Phone size={16} />
-                  +91 83097 43210
+                  +91 83097 21921
                 </a>
               </li>
 
               <li className="flex items-start gap-2 text-slate-400">
                 <MapPin size={16} />
                 <span>
-                   101, Metro Avenue, Plot No. 28 & 29, Calvary Temple Rd, IDPl Employees Colony, Hafeezpet
+                  101, Metro Avenue, Plot No. 28 & 29, Calvary Temple Rd, IDPl Employees Colony, Hafeezpet
                   <br />
                   Hyderabad, India
                 </span>
