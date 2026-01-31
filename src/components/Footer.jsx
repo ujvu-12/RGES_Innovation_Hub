@@ -17,7 +17,12 @@ const Footer = ({ logo }) => {
     { name: "Partners", href: "#partners" },
   ];
 
-  
+  const socialLinks = [
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Github, href: "#", label: "GitHub" },
+  ];
 
   return (
     <footer className="bg-slate-950 text-white">
@@ -31,7 +36,7 @@ const Footer = ({ logo }) => {
             <div className="flex items-center gap-3 mb-4">
               {logo && (
                 <img
-                  src={assests/rges-logo.jpg}
+                  src={logo}
                   alt="RGES Logo"
                   className="h-9 w-auto object-contain brightness-0 invert"
                 />
@@ -109,18 +114,18 @@ const Footer = ({ logo }) => {
 
               <li>
                 <a
-                  href="tel:+918309721921"
+                  href="tel:+919876543210"
                   className="flex items-start gap-2 text-slate-400 hover:text-white transition"
                 >
                   <Phone size={16} />
-                  +91 8309721921
+                  +91 98765 43210
                 </a>
               </li>
 
               <li className="flex items-start gap-2 text-slate-400">
                 <MapPin size={16} />
                 <span>
-                  101, Metro Avenue, Plot No.28 &29 , Calvary Temple Road,IDPI Employees Colony, Hafeezpet
+                  Innovation Hub, Tech Park
                   <br />
                   Hyderabad, India
                 </span>
